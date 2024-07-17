@@ -220,7 +220,8 @@ h2.hero_label{
     margin-top: -40px;
 }
 .container-fluid{
-    padding-inline: 134px;
+    padding-left: 134px;
+    padding-right: 134px;
 }
 /* Hero Section */
 .hero{
@@ -241,10 +242,11 @@ h2.hero_label{
     padding: 10px 40px;
 }
 .navbar {
-    padding-block: 26px;
-    height: 70px;
+    /* padding-block: 26px;
+    height: 70px; */
     transition: .25s ease-out;
     z-index: 9999;
+    /* padding-inline: 134px; */
 }
 .navbar-nav{
     gap: 30px;
@@ -678,10 +680,18 @@ footer .navbar-brand{
     background-color: var(--gray-hover);
 }
 /* Media Queries for responsiveness */
-@media (max-width:991px) {
+/* @media (max-width:1023px) {
     .container-fluid, .hero .container-fluid, .start .container-fluid, .subscription .container-fluid,
     .subscription.container-fluid, .play.container-fluid{
-        padding-inline: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+} */
+@media (max-width:1023px) {
+    .container-fluid, .hero .container-fluid, .start .container-fluid, .subscription .container-fluid,
+    .subscription.container-fluid, .play.container-fluid{
+        padding-left: 24px;
+        padding-right: 24px;
     }
     div:has( >.start_text){
         margin-left: unset;
@@ -694,10 +704,10 @@ footer .navbar-brand{
         display: none;
     }
     .Playstation_img, .mouse_img, .pistal_img{
-        max-width: 100px;
+        max-width: 72px;
     }
     .pistal_img{
-        top: 6%;
+        top: 11%;
     }
     .play h1{
         font-size: 32px;
@@ -720,12 +730,21 @@ footer .navbar-brand{
         margin-top: 34px;
         font-size: 14px;
     }
+    .navbar{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar.fixed{
+        /* padding-block: 8px;
+        height: unset; */
+    }
     .navbar-collapse{
         right: -293px;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 62px);
+        max-height: calc(100vh - 62px);
         background-color: var(--gray-color);
         position: absolute;
-        top: 70px;
+        top: 62px;
         width: 288px;
         padding: 16px 24px;
         z-index: 9999;
@@ -742,8 +761,22 @@ footer .navbar-brand{
         width: 100%;
     }
     .navbar-collapse.show {
-        right: -5px;
+        right: 0;
     }
+    .join{
+        margin-top: 52px;
+        margin-bottom: 52px;
+        background-size: 370px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        height: 330px;
+    }
+    .try .main_btn, .play .main_btn, .join .main_btn{
+        padding: 10px 42px;
+        font-size: 14px;
+        margin-top: 52px;
+    }
+
     footer .navbar-brand{
         margin-bottom: 16px;
     }

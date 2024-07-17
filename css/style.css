@@ -271,7 +271,6 @@ h2.hero_label{
     padding: 23px 25px;
     color: var(--white-color);
     box-shadow: 0px 4px 74px 0px #B8FF3A40;
-    height: 407px;
 }
 .subscription .container-fluid{
     padding-inline: 194px;
@@ -314,8 +313,11 @@ h2.hero_label{
 .sub_basic h3{
     color: var(--white-color);
 }
-.sub_basic, .sub_basic::after{
-    border-radius: 16px;
+.subscription .sub_box.sub_basic{
+    height: 427px;
+}
+.subscription .sub_box:not(.sub_basic){
+    height: 407px;
 }
 .sub_box .dropdown .btn{
     background-color:rgba(255, 255, 255, 0.1);
@@ -338,7 +340,12 @@ h2.hero_label{
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
+}
+.sub_box:not(.sub_basic) p{
     margin-bottom: 87px;
+}
+.sub_box.sub_basic p{
+    margin-bottom: 97px;
 }
 .sub_box h4{
     margin-bottom: 42px;
@@ -371,9 +378,9 @@ h2.hero_label{
     right: 0;
     filter: blur(20px);
 } */
- .basic_box, .sub_box_overlay{
+ /* .basic_box, .sub_box_overlay{
     border-radius: 16px;
- }
+ } */
  .rose_shape{
     width: 225px;
     height: 167px;
@@ -409,8 +416,8 @@ h2.hero_label{
 }
 .box_outer_container{
     filter: drop-shadow(0px 4px 74px rgba(184, 255, 58, 0.25));
-    border-radius: 16px;
     overflow: hidden;
+    margin-top: -10px;
 }
 .purple_shape{
     width: 225px;
@@ -512,25 +519,27 @@ h2.hero_label{
 }
 /* join Section */
 .join{
-    height: 808px;
-    background-image: url(../img/join.png);
-    background-size: cover;
-    margin-top: 80px;
-    z-index: 100;
+    margin-top: 100px;
+    text-align: center;
 }
 .join .banner{
     left: 50%;
-    bottom: 0;
+    bottom: 100px;
     transform: translateX(-50%);
     width: 100%;
 }
 /* Start Section */ 
 .start{
     padding-bottom: 133px;
+    /* background-image: url(../img/Group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center; */
 }
 .start .container-fluid{
     padding-left: 134px;
-    padding-top: 58px;
+    /* padding-top: 58px; */
+    margin-top: -15px;
     z-index: 100;
     position: relative;
 }
@@ -543,8 +552,9 @@ div:has( >.start_text){
     margin-top: 80px;
 }
 .start_img_bg{
-    margin-top: -170px;
-
+    margin-top: -255px;
+    left: -36%;
+    width: 170%;
 }
 .start h2{
     line-height: 43.88px;

@@ -488,7 +488,20 @@ h2.hero_label{
 }
 /* View Section */
 .view {
-    margin-top: -150px;
+    margin-top: -110px;
+    background-image: url(../img/wave\ 2\ -\ color\ dodge\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 175% 90%;
+}
+.view_text{
+    padding-top: 270px;
+    padding-bottom: 200px;
+}
+.view_text h2{
+    font-weight: 900;
 }
 .view_bg_img{
     left: 0;
@@ -499,27 +512,26 @@ h2.hero_label{
     top: -580px;
 }
 .yellow_shadow{
-    top: 30px;
-    right: -800px;
-}
-.mouse_img, .Playstation_img{
-    top: 280px;
+    top: -120px;
+    right: -810px;
 }
 .mouse_img{
     left: 0;
+    top: 240px;
 }
 .Playstation_img{
     right: 0;
+    top: 175px;
 }
 .view .main_alt_btn{
     margin-top: 90px;
 }
 .view h2:not(.gredient_heading){
-    padding-top: 450px;
+    padding-top: 100px;
 }
 /* join Section */
 .join{
-    margin-top: 100px;
+    margin-top: -140px;
     text-align: center;
 }
 .join .banner{
@@ -529,13 +541,28 @@ h2.hero_label{
     width: 100%;
 }
 /* Start Section */ 
-.start{
+/* .start{
     padding-bottom: 133px;
-    /* background-image: url(../img/Group.png);
-    background-size: cover;
+    background-image: url(../img/Group.png);
+    background-size: 170%;
     background-repeat: no-repeat;
-    background-position-x: center; */
-}
+    background-position-x: center;
+    background-position-y: top;
+    padding-top: 250px;
+    margin-top: -245px;
+} */
+ .start{
+    padding-bottom: 209px;
+    background-image: url(../img/Group.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 175% 85%;
+    padding-top: 250px;
+    margin-top: -245px;
+ }
 .start .container-fluid{
     padding-left: 134px;
     /* padding-top: 58px; */
@@ -567,11 +594,11 @@ div:has( >.start_text){
     margin-bottom: 34px;
 }
 .start_orange_shadow{
-    top: -800px;
-    left: -820px;
+    top: -620px;
+    left: -790px;
 }
 .start_blue_shadow{
-    top: -545px;
+    top: -290px;
 }
 /*Try Section */
 .try{

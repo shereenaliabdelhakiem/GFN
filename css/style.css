@@ -856,4 +856,7 @@ footer .navbar-brand{
         position: relative !important;
         margin-top: -42px;
     }
+    .navbar-nav{
+        gap: 20px;
+    }
 }

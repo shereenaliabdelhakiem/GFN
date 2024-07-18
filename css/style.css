@@ -64,9 +64,6 @@ h2.gredient_heading{
 .main_alt_btn:hover{
     color: var(--white-color);
 }
-/* .main_btn:hover{
-    background-color: #76d300;
-} */
 .main_alt_btn{
     clip-path: polygon(11% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     color: var(--white-color);
@@ -87,15 +84,6 @@ h2.gredient_heading{
     filter: drop-shadow(0px 5px 10px 0px rgba(118, 185, 0, 0.3));
 
 }
-/* .main_alt_btn:hover, .main_btn:hover{
-    color: var(--white-color) !important;
-} */
-/* .main_alt_btn:hover::after{
-    background-color: var(--main-color);
-} */
-/* .main_alt_btn:hover{
-    background-color: var(--gray-hover);
-} */
 .main_btn:link,
 .main_btn:visited,
 .main_btn {
@@ -154,8 +142,6 @@ h2.gredient_heading{
 .butn:hover,
 .butn:active {
   transform: translateY(-3px);
-  /* color: #fff; */
-  /* background-color: var(--main-color) !important; */
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -242,11 +228,8 @@ h2.hero_label{
     padding: 10px 40px;
 }
 .navbar {
-    /* padding-block: 26px;
-    height: 70px; */
     transition: .25s ease-out;
     z-index: 9999;
-    /* padding-inline: 134px; */
 }
 .navbar-nav{
     gap: 30px;
@@ -370,17 +353,6 @@ h2.hero_label{
 .sub_boxs{
     margin-bottom: 90px;
 }
-/* .basic_box::before{
-    content: url(../img/rose_shape.png);
-    position: absolute;
-    width: 225px;
-    height: 167px;
-    right: 0;
-    filter: blur(20px);
-} */
- /* .basic_box, .sub_box_overlay{
-    border-radius: 16px;
- } */
  .rose_shape{
     width: 225px;
     height: 167px;
@@ -534,23 +506,7 @@ h2.hero_label{
     margin-top: -140px;
     text-align: center;
 }
-.join .banner{
-    left: 50%;
-    bottom: 100px;
-    transform: translateX(-50%);
-    width: 100%;
-}
 /* Start Section */ 
-/* .start{
-    padding-bottom: 133px;
-    background-image: url(../img/Group.png);
-    background-size: 170%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    padding-top: 250px;
-    margin-top: -245px;
-} */
  .start{
     padding-bottom: 209px;
     background-image: url(../img/Group.png);
@@ -575,7 +531,7 @@ h2.hero_label{
 }
 div:has( >.start_text){
     max-width: 390px;
-    margin-left: -100px;
+    /* margin-left: -100px; */
     margin-top: 80px;
 }
 .start_img_bg{
@@ -717,22 +673,78 @@ footer .navbar-brand{
     background-color: var(--gray-hover);
 }
 /* Media Queries for responsiveness */
-/* @media (max-width:1023px) {
-    .container-fluid, .hero .container-fluid, .start .container-fluid, .subscription .container-fluid,
-    .subscription.container-fluid, .play.container-fluid{
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-} */
-@media (max-width:1023px) {
-    .container-fluid, .hero .container-fluid, .start .container-fluid, .subscription .container-fluid,
-    .subscription.container-fluid, .play.container-fluid{
-        padding-left: 24px;
-        padding-right: 24px;
-    }
+ @media (max-width:1280px) {
     div:has( >.start_text){
         margin-left: unset;
     }
+    .hero .container-fluid, .container-fluid{
+        padding-inline: 57px !important;
+    }
+    .sub_boxs{
+        padding-top: 60px;
+    }
+ }
+ @media (max-width:1279px) {
+    .Playstation_img,.mouse_img{
+        max-width: 250px;
+    }
+    .navbar-brand{
+        max-width: 170px;
+    }
+    .hero .container-fluid, .container-fluid{
+        padding-inline: 32px !important;
+    }
+    .navbar-nav{
+        gap: 0;
+    }
+    .try_man{
+        right: 40px;
+    }
+    footer h5{
+        font-size: 14px;
+    }
+    footer a, footer p {
+        font-size: 12px;
+    }
+    h1.gredient_heading{
+        font-size: 65.87px;
+    }
+    h2.hero_label{
+        font-size: 65.87px;
+    }
+    .sub_box:not(.sub_basic) p{
+        margin-bottom: 76px;
+    }
+    .play h1{
+        font-size: 48px;
+    }
+ }
+ @media (min-width:991px) {
+    .join .banner{
+        position: absolute;
+        left: 50%;
+        bottom: 100px;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .start_text{
+        
+    }
+ }
+ @media (min-width:768px) and (max-width:991px) {
+    .fish_img{
+        max-width: 180px;
+    }
+ }
+@media (max-width:991px) {
+    .container-fluid, .hero .container-fluid, .start .container-fluid, .subscription .container-fluid,
+    .subscription.container-fluid, .play.container-fluid{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    /* div:has( >.start_text){
+        margin-left: unset;
+    } */
     h2.hero_label, h1.gredient_heading{
         line-height: 1.5;
         font-size: 32px;
@@ -771,10 +783,6 @@ footer .navbar-brand{
         padding-left: 0;
         padding-right: 0;
     }
-    .navbar.fixed{
-        /* padding-block: 8px;
-        height: unset; */
-    }
     .navbar-collapse{
         right: -293px;
         height: calc(100vh - 62px);
@@ -802,11 +810,6 @@ footer .navbar-brand{
     }
     .join{
         margin-top: 52px;
-        margin-bottom: 52px;
-        background-size: 370px;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        height: 330px;
     }
     .try .main_btn, .play .main_btn, .join .main_btn{
         padding: 10px 42px;
@@ -838,5 +841,30 @@ footer .navbar-brand{
     .try_text p{
         margin-top: 10px;
         margin-bottom: 30px;
+    }
+    .view, .join, .start{
+        background-image: unset;
+    }
+    .sub_boxs{
+        padding-top: 0;
+    }
+    .view_text {
+        padding-top: 160px;
+        padding-bottom: 52px;
+    }
+    .mouse_img{
+        top: 155px;
+    }
+    .Playstation_img{
+        top: 145px;
+    }
+    .start {
+        padding-top: 52px;
+        padding-bottom: 100px;
+        margin-top: unset;
+    }
+    .join .banner{
+        position: relative !important;
+        margin-top: -42px;
     }
 }

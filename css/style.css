@@ -521,7 +521,6 @@ h2.hero_label{
  }
 .start .container-fluid{
     padding-left: 134px;
-    /* padding-top: 58px; */
     margin-top: -15px;
     z-index: 100;
     position: relative;
@@ -531,7 +530,6 @@ h2.hero_label{
 }
 div:has( >.start_text){
     max-width: 390px;
-    /* margin-left: -100px; */
     margin-top: 80px;
 }
 .start_img_bg{
@@ -581,9 +579,6 @@ div:has( >.start_text){
     right: 207px;
     top: -100px;
     z-index: 10;
-    /* box-shadow: 0px -26px 34px 0px #00000040; */
-    /* width: 424px;
-    height: 484px; */
 }
 .try_text{
     max-width: 454px;
@@ -727,9 +722,6 @@ footer .navbar-brand{
         transform: translateX(-50%);
         width: 100%;
     }
-    .start_text{
-        
-    }
  }
  @media (min-width:768px) and (max-width:991px) {
     .fish_img{
@@ -742,9 +734,6 @@ footer .navbar-brand{
         padding-left: 24px;
         padding-right: 24px;
     }
-    /* div:has( >.start_text){
-        margin-left: unset;
-    } */
     h2.hero_label, h1.gredient_heading{
         line-height: 1.5;
         font-size: 32px;
